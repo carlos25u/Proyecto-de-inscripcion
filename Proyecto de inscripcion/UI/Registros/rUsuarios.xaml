@@ -1,0 +1,71 @@
+﻿<Window x:Class="Proyecto_de_inscripcion.UI.Registros.rUsuarios"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proyecto_de_inscripcion.UI.Registros"
+        mc:Ignorable="d"
+        Title="Registro de Usuarios" Height="530" Width="450">
+    <Grid>
+        <StackPanel Orientation="Horizontal" Margin="10">
+            <StackPanel Orientation="Vertical">
+                <Label Content="Usuarios Id"/>
+                <StackPanel Orientation="Horizontal" Margin="5,0,0,0">
+                    <TextBox x:Name="UsuarioIdTextBox" Height="23" Width="90"/>
+                    <Button x:Name="BuscarButton" Margin="10" >
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Buscar"/>
+                            <Image Source="/Resources/Buscar.png" Height="20" HorizontalAlignment="Left" />
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Nombre"/>
+                    <TextBox  x:Name="NombreTextBox" Height="23"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Apellido"/>
+                    <TextBox x:Name="ApellidoTextBox" Height="23"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Nombre de Usuario"/>
+                    <TextBox x:Name="NombreUsuarioTextBox" Height="23"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Clave"/>
+                    <PasswordBox x:Name="ClavePasswordBox" Height="23"/>
+                    <Label Content="Confirmar Clave"/>
+                    <PasswordBox x:Name="ConfirmarClavePasswordBox" Height="20"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical">
+                    <Label Content="Fecha"/>
+                    <DatePicker Name="FechaDatePicker"/>
+                    <Label Content="Rol"/>
+                    <ComboBox x:Name="UsuarioCombobox" Height="27"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5, 15">
+                    <Button x:Name="NuevoButton" Height="40" Width="110" Click="NuevoButton_Click" Margin="10,0">
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Nuevo"/>
+                            <Image Source="/Resources/Nuevo.png" Height="20" HorizontalAlignment="Left" />
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="GuardarButton" Height="40" Width="110" Click="GuardarButton_Click" Margin="10,0">
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Guardar"/>
+                            <Image Source="/Resources/Guardar.png" Height="20" HorizontalAlignment="Left"/>
+                        </StackPanel>
+
+                    </Button>
+                    <Button x:Name="EliminarButton" Height="40" Width="110" Click = "EliminarButton_Click" Margin="10,0">
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Eliminar"/>
+                            <Image Source="/Resources/Eliminar.png" Height="20" HorizontalAlignment="Left"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
