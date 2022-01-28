@@ -35,10 +35,10 @@
             <TextBox x:Name="DireccionTextBox" ></TextBox>
 
             <Label Content="Telefono"></Label>
-            <TextBox x:Name="TelefonoTextBox"  PreviewTextInput="TelefonoTextBox_PreviewTextInput"></TextBox>
+            <TextBox x:Name="TelefonoTextBox" ></TextBox>
 
             <Label Content="Celular"></Label>
-            <TextBox x:Name="CelularTextBox" PreviewTextInput="CelularTextBox_PreviewTextInput"></TextBox>
+            <TextBox x:Name="CelularTextBox"></TextBox>
 
             <Label Content="Correo"></Label>
             <TextBox x:Name="CorreoTextBox" ></TextBox>

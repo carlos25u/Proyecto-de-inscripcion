@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto_de_inscripcion"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Menu Principal" Height="300" Width="600">
     <Grid>
-
+        <StackPanel Orientation="Vertical">
+            <Menu Height="20" Background="LightBlue">
+                <MenuItem Header="Registros" Height="21">
+                    <MenuItem Header="Usuarios" x:Name="RegistroUsuarioMenuItem" Click="RegistroUsuarioMenuItem_Click"></MenuItem>
+                    <MenuItem Header="Estudiantes" x:Name="RegistroEstudianteMenuItem" Click="RegistroEstudianteMenuItem_Click"></MenuItem>
+                    <MenuItem Header="Incripciones" x:Name="RegistroIncripcionMenuItem" Click="RegistroIncripcionMenuItem_Click"></MenuItem>
+                    <MenuItem Header="Profesores" x:Name="RegistroProfesoresMenuItem" Click="RegistroProfesoresMenuItem_Click"></MenuItem>
+                    <MenuItem Header="Cursos" x:Name="RegistroCursosMenuItem" Click="RegistroCursosMenuItem_Click"></MenuItem>
+                    <MenuItem Header="Areas" x:Name="RegistroAreasMenuItem" Click="RegistroAreasMenuItem_Click"></MenuItem>
+                    <MenuItem Header="Materias" x:Name="RegistroMateriasMenuItem" Click="RegistroMateriasMenuItem_Click"></MenuItem>
+                </MenuItem>
+            </Menu>
+        </StackPanel>
     </Grid>
 </Window>
