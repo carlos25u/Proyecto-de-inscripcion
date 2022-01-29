@@ -25,6 +25,8 @@
                     <MenuItem Header="Incripciones" x:Name="ConsultasIncripcionMenuItem" Click="ConsultasIncripcionMenuItem_Click"></MenuItem>
                     <MenuItem Header="Profesores" x:Name="ConsultasProfesoresMenuItem" Click="ConsultasProfesoresMenuItem_Click"></MenuItem>
                     <MenuItem Header="Cursos" x:Name="ConsultasCursosMenuItem" Click="ConsultasCursosMenuItem_Click"></MenuItem>
+                    <MenuItem Header="Areas" x:Name="ConsultasAreasMenuItem" Click="ConsultasAreasMenuItem_Click"></MenuItem>
+                    <MenuItem Header="Cursos" x:Name="ConsultasMateriasMenuItem" Click="ConsultasMateriasMenuItem_Click"></MenuItem>
                 </MenuItem>
             </Menu>
         </StackPanel>

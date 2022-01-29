@@ -98,5 +98,17 @@ namespace Proyecto_de_inscripcion
             cCursos cursos = new cCursos();
             cursos.Show();
         }
+
+        private void ConsultasMateriasMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            cMaterias materias = new cMaterias();
+            materias.Show();
+        }
+
+        private void ConsultasAreasMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            cAreas areas = new cAreas();
+            areas.Show();
+        }
     }
 }
