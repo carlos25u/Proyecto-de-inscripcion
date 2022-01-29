@@ -1,0 +1,51 @@
+﻿<Window x:Class="Proyecto_de_inscripcion.UI.Consultas.cInscripciones"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Proyecto_de_inscripcion.UI.Consultas"
+        mc:Ignorable="d"
+        Title="Consultas de incripciones" Height="430" Width="640">
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="10">
+            <StackPanel Orientation="Horizontal" Height="58">
+                <StackPanel>
+                    <Label Content="Desde:"/>
+                    <DatePicker x:Name="DesdeDataPicker"/>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="5,0">
+                    <Label Content="Hasta:"/>
+                    <DatePicker x:Name="HastaDataPicker" />
+                </StackPanel>
+                <StackPanel Margin="5,0">
+                    <Label Content="Filtro: "/>
+                    <ComboBox x:Name="FiltroComboBox" Width="100">
+                        <ComboBoxItem Content="Id Incripcion"/>
+                        <ComboBoxItem Content="Id Estudiante"/>
+                        <ComboBoxItem Content="Id Curso"/>
+                    </ComboBox>
+                </StackPanel>
+                <StackPanel Margin="5,0">
+                    <Label Content="Criterio: "/>
+                    <TextBox x:Name="CriterioTextBox" Width="100"/>
+                </StackPanel>
+                <Button x:Name="BuscarButton" Height="34">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Resources/Buscar.png" Height="18" />
+                        <Label Content="Buscar"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left">
+                <DataGrid x:Name="DatosDataGrid" Height="300" Width="587" AutoGenerateColumns="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Id Incripcion"  IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Fecha" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Estudiante" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Curso" IsReadOnly="True"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
