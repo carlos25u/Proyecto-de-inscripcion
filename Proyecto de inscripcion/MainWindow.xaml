@@ -18,6 +18,14 @@
                     <MenuItem Header="Areas" x:Name="RegistroAreasMenuItem" Click="RegistroAreasMenuItem_Click"></MenuItem>
                     <MenuItem Header="Materias" x:Name="RegistroMateriasMenuItem" Click="RegistroMateriasMenuItem_Click"></MenuItem>
                 </MenuItem>
+
+                <MenuItem Header="Consultas" Height="20">
+                    <MenuItem Header="Usuarios" x:Name="ConsultasUsuarioMenuItem" Click="ConsultasUsuarioMenuItem_Click"></MenuItem>
+                    <MenuItem Header="Estudiantes" x:Name="ConsultasEstudianteMenuItem" Click="ConsultasEstudianteMenuItem_Click"></MenuItem>
+                    <MenuItem Header="Incripciones" x:Name="ConsultasIncripcionMenuItem" Click="ConsultasIncripcionMenuItem_Click"></MenuItem>
+                    <MenuItem Header="Profesores" x:Name="ConsultasProfesoresMenuItem" Click="ConsultasProfesoresMenuItem_Click"></MenuItem>
+                    <MenuItem Header="Cursos" x:Name="ConsultasCursosMenuItem" Click="ConsultasCursosMenuItem_Click"></MenuItem>
+                </MenuItem>
             </Menu>
         </StackPanel>
     </Grid>

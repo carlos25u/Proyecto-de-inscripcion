@@ -1,4 +1,5 @@
-﻿using Proyecto_de_inscripcion.UI.Registros;
+﻿using Proyecto_de_inscripcion.UI.Consultas;
+using Proyecto_de_inscripcion.UI.Registros;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -66,6 +67,36 @@ namespace Proyecto_de_inscripcion
         {
             rMaterias materias = new rMaterias();
             materias.Show();
+        }
+
+        private void ConsultasUsuarioMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            cUsuarios usuarios = new cUsuarios();
+            usuarios.Show();
+        }
+
+        private void ConsultasEstudianteMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            cEstudiantes estudiantes = new cEstudiantes();
+            estudiantes.Show();
+        }
+
+        private void ConsultasIncripcionMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            cInscripciones inscripciones = new cInscripciones();
+            inscripciones.Show();
+        }
+
+        private void ConsultasProfesoresMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            cProfesores profesores = new cProfesores();
+            profesores.Show();
+        }
+
+        private void ConsultasCursosMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            cCursos cursos = new cCursos();
+            cursos.Show();
         }
     }
 }
