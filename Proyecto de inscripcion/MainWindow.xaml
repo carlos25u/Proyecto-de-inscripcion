@@ -17,6 +17,7 @@
                     <MenuItem Header="Cursos" x:Name="RegistroCursosMenuItem" Click="RegistroCursosMenuItem_Click"></MenuItem>
                     <MenuItem Header="Areas" x:Name="RegistroAreasMenuItem" Click="RegistroAreasMenuItem_Click"></MenuItem>
                     <MenuItem Header="Materias" x:Name="RegistroMateriasMenuItem" Click="RegistroMateriasMenuItem_Click"></MenuItem>
+                    <MenuItem Header="Casos" x:Name="RegistrosCasos" Click="RegistrosCasos_Click"></MenuItem>
                 </MenuItem>
 
                 <MenuItem Header="Consultas" Height="20">
