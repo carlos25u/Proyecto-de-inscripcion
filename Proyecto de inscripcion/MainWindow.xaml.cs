@@ -110,5 +110,11 @@ namespace Proyecto_de_inscripcion
             cAreas areas = new cAreas();
             areas.Show();
         }
+
+        private void RegistrosCasos_Click(object sender, RoutedEventArgs e)
+        {
+            UI.Registros.rCasos casos = new UI.Registros.rCasos();
+            casos.Show();
+        }
     }
 }
