@@ -116,5 +116,17 @@ namespace Proyecto_de_inscripcion
             UI.Registros.rCasos casos = new UI.Registros.rCasos();
             casos.Show();
         }
+
+        private void Registrossupensiones_Click(object sender, RoutedEventArgs e)
+        {
+            rSuspensiones suspensiones = new rSuspensiones();
+            suspensiones.Show();
+        }
+
+        private void Consultarsuspension_Click(object sender, RoutedEventArgs e)
+        {
+            cSuspensiones suspe = new cSuspensiones();
+            suspe.Show();
+        }
     }
 }

@@ -5,8 +5,60 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto_de_inscripcion.UI.Registros"
         mc:Ignorable="d"
-        Title="Registros de Suspensiones" Height="450" Width="800">
+        Title="Registros de Suspensiones" Height="350" Width="430">
     <Grid>
-        
+        <StackPanel Orientation="Vertical" Margin="10">
+            <Label Content="Suspension id"></Label>
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,0">
+                <TextBox x:Name="suspencionid" Height="18" Width="90"/>
+                <Button x:Name="BuscarButton" Margin="10">
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Buscar"/>
+                        <Image Source="/Resources/Buscar.png" Height="20" HorizontalAlignment="Left" />
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+
+            <Label Content="Fecha"></Label>
+            <DatePicker></DatePicker>
+            
+            <StackPanel Orientation="Horizontal" Margin="0,7">
+                <RadioButton Content="Profesores" ></RadioButton>
+                <RadioButton Content="Estudiantes" Margin="10,0,0,0"></RadioButton>
+            </StackPanel>
+
+            <Label Content="Persona"></Label>
+            <ComboBox ></ComboBox>
+
+            <Label Content="Casos"></Label>
+            <ComboBox></ComboBox>
+
+            <StackPanel Orientation="Horizontal">
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0, 15">
+                    <Button x:Name="NuevoButton" Height="40" Width="110" Margin="10,0">
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Nuevo"/>
+                            <Image Source="/Resources/Nuevo.png" Height="20" HorizontalAlignment="Left" />
+                        </StackPanel>
+                    </Button>
+                    <Button x:Name="GuardarButton" Height="40" Width="110" Margin="10,0">
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Guardar"/>
+                            <Image Source="/Resources/Guardar.png" Height="20" HorizontalAlignment="Left"/>
+                        </StackPanel>
+
+                    </Button>
+                    <Button x:Name="EliminarButton" Height="40" Width="110" Margin="10,0">
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Eliminar"/>
+                            <Image Source="/Resources/Eliminar.png" Height="20" HorizontalAlignment="Left"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+
+
+        </StackPanel>
     </Grid>
 </Window>
