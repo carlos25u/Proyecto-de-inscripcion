@@ -30,6 +30,7 @@
                     <MenuItem Header="Areas" x:Name="ConsultasAreasMenuItem" Click="ConsultasAreasMenuItem_Click"></MenuItem>
                     <MenuItem Header="Materias" x:Name="ConsultasMateriasMenuItem" Click="ConsultasMateriasMenuItem_Click"></MenuItem>
                     <MenuItem Header="Suspension" x:Name="Consultarsuspension" Click="Consultarsuspension_Click"></MenuItem>
+                    <MenuItem Header="Casos" Name="ConsultarCasos" Click="ConsultarCasos_Click_1"></MenuItem>
                 </MenuItem>
             </Menu>
         </StackPanel>

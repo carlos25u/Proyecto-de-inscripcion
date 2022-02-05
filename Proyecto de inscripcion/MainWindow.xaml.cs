@@ -128,5 +128,11 @@ namespace Proyecto_de_inscripcion
             cSuspensiones suspe = new cSuspensiones();
             suspe.Show();
         }
+        private void ConsultarCasos_Click_1(object sender, RoutedEventArgs e)
+        {
+            UI.Consultas.rCasos casos = new UI.Consultas.rCasos();
+            casos.Show();
+            
+        }
     }
 }

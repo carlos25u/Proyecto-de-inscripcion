@@ -5,8 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Proyecto_de_inscripcion.UI.Consultas"
         mc:Ignorable="d"
-        Title="Consultas de Casos" Height="450" Width="800">
+        Title="Consultas de Casos" Height="350" Width="400">
     <Grid>
-        
+        <StackPanel Orientation="Vertical" Margin="10, 5, 10, 0">
+            <StackPanel Orientation="Horizontal" Height="58">
+                <StackPanel Margin="5,0">
+                    <Label Content="Filtro: "/>
+                    <ComboBox x:Name="FiltroComboBox" Width="100">
+      
+                    </ComboBox>
+                </StackPanel>
+                <StackPanel Margin="5,0">
+                    <Label Content="Criterio: "/>
+                    <TextBox x:Name="CriterioTextBox" Width="100"/>
+                </StackPanel>
+                <Button x:Name="BuscarButton" Height="35">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="/Resources/Buscar.png" Height="18"/>
+                        <Label Content="Buscar"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            <StackPanel HorizontalAlignment="Left">
+                <DataGrid x:Name="DatosDataGrid" Height="240" Width="345" AutoGenerateColumns="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Casos Id" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Descripcion"  IsReadOnly="True"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>
